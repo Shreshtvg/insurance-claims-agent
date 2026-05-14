@@ -14,6 +14,8 @@ Mistral OCR API
 LLM
 Groq (Llama 3.1)
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 **Features**
 PDF and TXT claim document support
 OCR-powered scanned PDF parsing using Mistral OCR
@@ -23,6 +25,8 @@ Intelligent workflow routing
 Explainable routing decisions
 Streamlit dashboard UI
 Pipeline visibility for debugging and transparency
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 **AI Pipeline**
 PDF / TXT
@@ -38,6 +42,8 @@ Structured JSON
 Validation
     ↓
 Claim Routing
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 **Setup Instructions**
 
@@ -58,31 +64,27 @@ source venv/bin/activate
 cd backend
 pip install -r requirements.txt
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 **Environment Variables**
 Create:
 backend/.env.example already exists
 Please add the API keys for mistral OCR and Groq llm
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 **Running The Application**
 **Start Backend**
 
 From backend/ folder:
-
 uvicorn app.main:app --reload
-
-Backend runs on:
-
-http://127.0.0.1:8000
+Backend runs on: http://127.0.0.1:8000
 
 **Start Frontend**
 
 Open a second terminal from project root:
-
 streamlit run frontend/streamlit_app.py
-
-Frontend runs on:
-
-http://localhost:8501
+Frontend runs on: http://localhost:8501
 
 **Pipeline Visibility**
 
