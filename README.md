@@ -93,8 +93,6 @@ pip install -r requirements.txt
 
 # Environment Variables
 
-Create:
-
 ```text
 backend/.env.example already exists.
 
