@@ -2,6 +2,8 @@
 
 AI-powered insurance FNOL (First Notice of Loss) processing system that extracts structured claim information from PDF/TXT documents, validates required fields, and automatically routes claims to the appropriate workflow.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 **Tech Stack**
 Backend
 FastAPI
