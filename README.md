@@ -135,32 +135,6 @@ Frontend runs on:
 ```text
 http://localhost:8501
 ```
-
----
-
-# API Endpoint
-
-## Analyze Claim
-
-```http
-POST /analyze
-```
-
-### Input
-- PDF file
-- TXT file
-
-### Output
-
-```json
-{
-  "extractedFields": {},
-  "missingFields": [],
-  "recommendedRoute": "",
-  "reasoning": ""
-}
-```
-
 ---
 
 # Pipeline Visibility
@@ -172,39 +146,6 @@ The frontend includes expandable debug sections showing:
 - Final Structured JSON
 
 This helps inspect extraction quality and OCR behavior.
-
----
-
-# Current Capabilities
-
-- Handles scanned insurance PDFs
-- Supports OCR-based extraction
-- Performs AI-powered structured field extraction
-- Detects missing mandatory fields
-- Generates routing recommendations
-
----
-
-# Future Improvements
-
-- Confidence scoring
-- Fraud detection layer
-- Section-aware extraction
-- Human-in-the-loop review
-- Claim history database
-- Multi-agent workflows
-- Async processing queue
-
----
-
-# Demo Flow
-
-1. Upload FNOL document
-2. OCR extracts document text
-3. LLM extracts structured claim fields
-4. Validation checks missing fields
-5. Routing engine determines workflow
-6. UI displays extracted information and reasoning
 
 ---
 
